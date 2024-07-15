@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активация лицензии</title>
+    <link rel="stylesheet" type="text/css" href="https://storage.yandexcloud.net/pac-datapub/style.css">
+    <link rel="icon" type="image/x-icon" href="https://storage.yandexcloud.net/pac-datapub/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <img src="https://storage.yandexcloud.net/pac-datapub/login.png" alt="Logo">
+    <h1>Активация лицензии</h1>
+    <div id="formContainer">
+        <input type="text" id="licenseKey" placeholder="Введите ваш лицензионный ключ">
+        <button onclick="activateLicense()">Активировать</button>
+    </div>
+    <div class="loader" id="loader" style="display: none;"></div>
+    <div class="message" id="message"></div>
+    <div id="spinnerContainer" class="hidden">
+        <div class="spinner"></div>
+        <div class="message" id="installMessage">Идет установка и настройка...</div>
+    </div>
+</div>
+ <script src="https://storage.yandexcloud.net/pac-datapub/lic.js"></script>
+</body>
+</html>
